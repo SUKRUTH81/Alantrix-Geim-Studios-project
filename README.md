@@ -25,6 +25,12 @@ docker build -t economy-service .
 docker run --rm -p 8000:8000 economy-service
 ```
 
+Run with Docker Compose:
+
+```bash
+docker compose up --build
+```
+
 SQLite is used as the durable datastore, so no additional container is required.
 
 ## Examples

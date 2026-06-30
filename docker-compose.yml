@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  economy-service:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - ECONOMY_DB_PATH=/app/data/economy.db
